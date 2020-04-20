@@ -1,0 +1,132 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+  }
+  
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper .wrapper-content {
+    font-family: sans-serif;
+  }
+  .wrapper .wrapper-content .title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem;
+  }
+  .wrapper .wrapper-content .filters-image {
+    display: flex;
+    background-color: #e0e0d1;
+  }
+  @media (max-width: 600px) {
+    .wrapper .wrapper-content .filters-image {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 425px) {
+    .wrapper .wrapper-content .filters-image {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .wrapper .wrapper-content .filters-image .filters {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    min-width: 200px;
+  }
+  .wrapper .wrapper-content .filters-image .filters .filters-title {
+    font-size: 0.9rem;
+    margin: 0.6rem;
+  }
+  .wrapper .wrapper-content .filters-image .filters .filters-option {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    min-width: 100px;
+    height: 30px;
+    font-size: 0.8em;
+    padding: 5px;
+  }
+  @media (max-width: 600px) {
+    .wrapper .wrapper-content .filters-image .filters .filters-option {
+      min-width: 90%;
+    }
+  }
+  @media (max-width: 425px) {
+    .wrapper .wrapper-content .filters-image .filters .filters-option {
+      min-width: 90%;
+    }
+  }
+  .wrapper .wrapper-content .macbook-img {
+    padding: 1.5rem;
+  }
+  .wrapper .wrapper-content .macbook-img .title-imagen {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .wrapper .wrapper-content .macbook-img .img-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wrapper .wrapper-content .macbook-img .img-content .image {
+    width: 300px;
+    margin: 10px;
+    flex-grow: 1;
+  }
+  @media (max-width: 768px) {
+    .wrapper .wrapper-content .macbook-img .img-content .image {
+      width: calc(40% - 20px);
+    }
+  }
+  @media (max-width: 600px) {
+    .wrapper .wrapper-content .macbook-img .img-content .image {
+      width: calc(40% - 20px);
+    }
+  }
+  @media (max-width: 425px) {
+    .wrapper .wrapper-content .macbook-img .img-content .image {
+      width: calc(60% - 20px);
+    }
+  }
+  .wrapper .wrapper-content .macbook-img .img-content .image .img {
+    width: 100%;
+  }
+  .wrapper .wrapper-content .macbook-img .img-content .image .title-price {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+  }
+  .wrapper .wrapper-content .macbook-img .img-content .image .title-price .title-img {
+    margin-bottom: 8px;
+  }
+  .wrapper .wrapper-content .macbook-img .img-content .image .title-price .price {
+    color: #838060;
+  }
+  
+  .footer {
+    margin: 1.5rem;
+  }
+  .footer .text-footer {
+    color: #b3b3b3;
+    font-size: 0.8rem;
+    line-height: 25px;
+    margin-bottom: 1rem;
+  }
+  .footer .macbook {
+    color: #595959;
+    font-size: 1rem;
+  }
+  .footer .icons .fa {
+    margin: 0.8rem;
+    color: #595959;
+    background-color: #e6e6e6;
+    text-align: center;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+  }
