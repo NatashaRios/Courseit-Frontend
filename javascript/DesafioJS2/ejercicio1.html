@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Ejercicio 1</title>
+    
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+
+    <script>
+        //Una funcion que reciba como parametro un numero entero que recorra de 0 a numero recibido
+        //Imprimir fizz si es multiplo de 3
+        //Imprimir buzz si es multiplo de 5
+        //Imprimir fizzbuzz si es multiplo de 3 y 5
+        //Imprimir el numero si no es multiplo de ninguno
+
+        
+        
+        function FizzBuzz(numero) {
+            
+            for (let i = 0; i <= numero; i++) {
+              if (i % 3 == 0 && i % 5 == 0) {
+                  console.log('FizzBuzz');
+              } else if (i % 3 == 0) {
+                  console.log('Fizz');
+              } else if (i % 5 == 0) {
+                  console.log('Buzz')
+              }else {
+                  console.log(i);
+              }
+            }
+        }
+       FizzBuzz(15);
+        
+    </script>
+</body>
+</html>
