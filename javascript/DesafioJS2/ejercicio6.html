@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Ejercicio 6</title>
+    
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+
+    <script>
+        //Crear una función que determine si una palabra es palindromo o no
+        //palindrome('juani') // false palindrome('sugus') // true
+
+        function palindromo(str) {
+            let lowerCase = str.toLowerCase();
+            let reverseStr = lowerCase.split("").reverse().join("");
+            if (lowerCase == reverseStr) {
+                console.log("La palabra " + str.toLowerCase() + " es palindromo");
+            } else {
+                console.log("La palabra " + str.toLowerCase() + " no es palindromo");
+            }
+        }
+        palindromo("Sugus");
+    </script>
+</body>
+</html>

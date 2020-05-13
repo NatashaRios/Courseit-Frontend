@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Ejercicio 2</title>
+    
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+    <script>
+        //Dada una variable donde se ingresa el nombre del mes, devolver la cantidad de días correspondiente.
+
+        
+
+        function nombre (mes) {
+            let dias;
+            mesToLowerCase = mes.toLowerCase();
+            if (mesToLowerCase == "enero" || mesToLowerCase == "marzo"|| mesToLowerCase == "mayo" || mesToLowerCase == "julio" || mesToLowerCase == "agosto" || mesToLowerCase == "octubre" || mesToLowerCase == "diciembre") {
+                    dias = 31;
+            } else if (mesToLowerCase == "abril" || mesToLowerCase == "junio" || mesToLowerCase == "septiembre" || mesToLowerCase == "noviembre") {
+                    dias = 30;
+            } else if (mesToLowerCase == "febrero") {
+                    dias = 28;
+            } else {
+                console.log("Ingresa un mes válido");
+                return;
+            }
+            console.log("El mes " + mes.toLowerCase() + " tiene " + dias + " dias");
+        }
+
+        nombre("Septiembre");
+    </script>
+</body>
+</html>

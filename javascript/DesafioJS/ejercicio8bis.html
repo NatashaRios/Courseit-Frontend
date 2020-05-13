@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Ejercicio 8</title>
+    
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+    <script>
+        //Dados distintas tarjetas de crédito, mostrar por consola la cantidad de cuotas sin interés según el siguiente criterio.
+        //Mastercard – hasta 6 cuotas s/interés
+        //Visa – hasta 9 cuotas s/interés
+        //Amex – hasta 3 cuotas sin interés
+        //Todas las demás - 1 cuota sin interés
+        
+        function tarjetasCredito (tarjeta) {
+            let cuotas;
+
+            if (tarjeta != undefined || tarjeta != null){
+                if (tarjeta == "Visa") {
+                    cuotas = 9;
+                } else if (tarjeta == "Mastercard") {
+                    cuotas = 6;
+                } else if (tarjeta == "Amex") {
+                    cuotas = 3;
+                } else {
+                    cuotas = 1;
+                }
+            }else {
+                console.log("Ingrese una tarjeta");
+            }
+            console.log("La tarjeta " + tarjeta + " tiene hasta " + cuotas + " cuotas sin interés");
+        }
+        tarjetasCredito("Visa");
+    </script>
+
+</body>
+</html>
