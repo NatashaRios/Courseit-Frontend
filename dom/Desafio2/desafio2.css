@@ -1,0 +1,52 @@
+.wrapper {
+  margin: 30px;
+  max-width: 500px;
+  background-color: #fab7b7;
+}
+.wrapper .input {
+  background-color: #fab7b7;
+  border-radius: 10px;
+  border: solid #f3e1e1;
+  overflow: hidden;
+  height: 20px;
+  width: 90%;
+  text-align: center;
+  color: #f3e1e1;
+  margin: 5px 0 5px 20px;
+}
+.wrapper .contener {
+  display: none;
+}
+.wrapper .contener .barra {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 5px 35px;
+}
+.wrapper .contener .barra .reciente {
+  color: #f3e1e1;
+  font-size: 1.2em;
+}
+.wrapper .contener .barra .borrar {
+  border-radius: 10px;
+  border: #fab7b7;
+  outline: none;
+  background-color: #fab7b7;
+  color: #f3e1e1;
+  font-size: 1.2em;
+}
+.wrapper .contener .line {
+  background-color: #f3e1e1;
+  color: #f3e1e1;
+  height: 2px;
+  width: 100%;
+}
+.wrapper .contener .ul {
+  color: #f3e1e1;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=desafio2.css.map */

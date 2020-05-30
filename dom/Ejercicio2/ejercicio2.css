@@ -1,0 +1,33 @@
+.wrapper .form {
+  margin: 20px;
+}
+.wrapper .form .input {
+  height: 15px;
+  color: #808b97;
+  background-color: #fde2e2;
+  border: solid #fde2e2;
+  padding: 10px;
+  margin-right: 10px;
+}
+.wrapper .form .onclickAdd {
+  height: 40px;
+  width: 90px;
+  color: #808b97;
+  background-color: #fde2e2;
+  border: solid #fde2e2;
+  margin-right: 10px;
+}
+.wrapper .form .onclickClean {
+  height: 40px;
+  width: 90px;
+  color: #808b97;
+  background-color: #fde2e2;
+  border: solid #fde2e2;
+}
+.wrapper .list {
+  margin: 40px;
+  line-height: 25px;
+  color: #808b97;
+}
+
+/*# sourceMappingURL=ejercicio2.css.map */

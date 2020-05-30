@@ -1,0 +1,53 @@
+$pallete1: #fab7b7;
+$pallete2: #f3e1e1;
+
+.wrapper {
+  margin: 30px;
+  max-width: 500px;
+  background-color: $pallete1;
+  .input {
+    background-color: $pallete1;
+    border-radius: 10px;
+    border: solid $pallete2; 
+    overflow: hidden;
+    height: 20px;
+    width: 90%;
+    text-align: center;
+    color: $pallete2;
+    margin: 5px 0 5px 20px;
+  }
+  .contener {
+    display: none;
+    .barra {
+     width: 80%;
+     display: flex;
+     justify-content: space-between;
+     margin: 5px 0 5px 35px;
+      .reciente {
+       color: $pallete2;
+       font-size: 1.2em;
+    } //reciente
+      .borrar {
+       border-radius: 10px;
+       border: $pallete1;
+       outline: none;
+       background-color: $pallete1;
+       color: $pallete2;
+       font-size: 1.2em;
+    } //borrar
+  } //barra
+  .line {
+      background-color: $pallete2;
+      color: $pallete2;
+      height: 2px;
+      width: 100%;
+    }
+  .ul {
+    color: $pallete2;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+ }
+} //wrapper

@@ -1,0 +1,42 @@
+.wrapper {
+  width: 600px;
+  height: 800px;
+  border: solid #6886c5;
+  text-align: center;
+  margin: 80px auto;
+  position: relative;
+}
+.wrapper .wrapperContent .img {
+  width: 600px;
+  margin: 50px 0 100px 0;
+}
+.wrapper .wrapperContent .title {
+  color: #6886c5;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.wrapper .wrapperContent .price {
+  margin-top: 80px;
+  color: #f67280;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.wrapper .hover {
+  border: solid #6886c5;
+  text-align: center;
+  background-color: #6886c5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+.wrapper .hover .text {
+  color: white;
+  margin-top: 350px;
+  margin-left: 60px;
+  font-size: 5em;
+}
+
+/*# sourceMappingURL=desafio1.css.map */
