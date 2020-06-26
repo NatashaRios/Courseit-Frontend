@@ -1,0 +1,68 @@
+$pallete1: #00001a; //azul casi negro
+$pallete2: #004de6; //azul
+$pallete3: #d9d9d9; //gris muy claro
+$pallete4: #e6e6e6; //gris muy muy claro casi blanco
+.wrapper {
+  font-family: sans-serif;
+  background-color: $pallete1;
+  width: 100vw;
+  height: 100vh;
+  .contener {
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+    .input {
+      font-family: FontAwesome, sans-serif;
+      margin: 20px;
+      background-color: $pallete1;
+      border-radius: 20px;
+      border: 2px  solid $pallete2;
+      width: 100%;
+      height: 30px;
+      padding: 5px;
+      color: #a6a6a6;
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+    .none {
+      display: none;
+      .searchContener {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 30px;
+        padding: 10px;
+     
+        .reciente {
+          color: $pallete4;
+          font-size: 1em;
+          font-weight: bold;
+          letter-spacing: 0.5px;
+        }
+        .clean {
+          border: $pallete1;
+          outline: none;
+          background-color: $pallete1;
+          color: $pallete2;
+          font-weight: bold;
+          font-size: 1em;
+          letter-spacing: 0.5px;
+        }
+      } //searchContener
+      .line {
+        height: 1px;
+        width: 100%;
+        margin: 15px;
+        background-color: $pallete3;
+      }
+      .list {
+        color: $pallete4; 
+        text-align: left;
+        margin-left: 50px;
+        line-height: 40px;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+      }
+    }//none
+  } //contener
+} //wrapper

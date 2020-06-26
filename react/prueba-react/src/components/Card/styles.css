@@ -1,0 +1,35 @@
+.card {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  padding: 5px;
+  background-color: white;
+}
+
+.like {
+  text-align: center;
+}
+
+.button {
+  width: 150px;
+  height: 30px;
+  margin-left: 45px;
+  margin-bottom: 10px;
+  background-color: rgb(235, 224, 224);
+  border: 1px solid rgb(235, 224, 224);
+}
+
+.img {
+  width: 230px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.info-title {
+  margin-bottom: -5px;
+}
+
+.info-price {
+
+}
