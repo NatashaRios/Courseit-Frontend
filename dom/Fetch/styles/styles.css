@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  font-family: "Lato", sans-serif;
+  background-color: #fc9d9d;
+  min-height: 100vh;
+}
+.wrapper .content {
+  max-width: 15rem;
+  margin: 0 auto;
+}
+.wrapper .content .search {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+.wrapper .content .search .input {
+  height: 3rem;
+  width: 18rem;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  border: #fc9d9d;
+  font-size: 1em;
+}
+.wrapper .content .search .button {
+  height: 3rem;
+  width: 18rem;
+  margin-bottom: 4rem;
+  border-radius: 5px;
+  background-color: #ffcac2;
+  border: #ffcac2;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  font-size: 1em;
+  color: #888888;
+}
+.wrapper .content .horror {
+  margin-bottom: 1.5rem;
+  margin-top: -2rem;
+  margin-left: 2.5rem;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  display: none;
+}
+.wrapper .content .data {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border: 4px solid #e58a8a;
+  border-radius: 10px;
+  width: 18rem;
+  font-size: 1.1em;
+  font-weight: 900;
+}
+.wrapper .content .data .img {
+  width: 10rem;
+  margin-bottom: 2rem;
+  margin-top: -4rem;
+  margin-left: 1rem;
+  border: 4px solid #e58a8a;
+  border-radius: 80px;
+  background-color: transparent;
+}
+.wrapper .content .data .user {
+  color: white;
+  font-size: 1.5em;
+}
+.wrapper .content .data .name {
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.wrapper .content .data .location {
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.wrapper .content .data .public-repo {
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.wrapper .content .data .follower {
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

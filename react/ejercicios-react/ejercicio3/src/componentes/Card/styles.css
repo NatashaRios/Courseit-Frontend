@@ -1,0 +1,28 @@
+.card {
+  margin: 50px;
+  padding: 20px;
+  border: 1px solid white;
+  background-color: white;
+  display: inline-flex;
+}
+
+.img {
+  width: 80px;
+  margin-right: 5px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.title-card {
+ font-weight: bold;
+
+
+}
+
+.description {
+ display: inline-block;
+}
