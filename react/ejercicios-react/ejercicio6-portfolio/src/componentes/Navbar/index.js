@@ -4,9 +4,9 @@ import './styles.css';
 class NavBar extends React.Component {
   render() {
     return (
-      <div className="navBar">
+      <nav className="navBar">
         <span>{this.props.name}</span>
-      </div>
+      </nav>
     )
   }
 }

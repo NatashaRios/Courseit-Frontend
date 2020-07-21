@@ -5,7 +5,7 @@ class Project extends React.Component {
   render() {
     return (
       <div>
-       <p className="repo">{this.props.repo.name}</p>
+       <li className="repo">{this.props.repo.name}</li>
       </div>
     )
   }
