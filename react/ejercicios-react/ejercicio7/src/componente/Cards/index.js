@@ -7,20 +7,21 @@ class Cards extends React.Component {
     super(props);
 
     this.state = {
-      cards: [
-        {
-          name: "CourseIt",
-          img: "https://pbs.twimg.com/profile_images/1259719811296309249/um6CLRiM_400x400.jpg",
-          description: "Descripción CourseIt"
-        },
-        {
-          name: "Endeva",
-          img: "https://pbs.twimg.com/profile_images/1052208764726730753/s5bagDr__400x400.jpg",
-          description: "Prueba descripción"
-        }
-      ]
+      cards: []
     }
   }
+  componentDidMount(){
+    const startups = localStorage.getItem("startups"); //Leemos las startups
+    if(startups){
+      const parsedStartups = JSON.parse(startups); //Transformamos de string a json
+  
+    this.setState({
+      cards: parsedStartups
+    })
+    }
+    
+  }
+  
   render() {
     const { cards } = this.state;
     const { filter } = this.props;
@@ -28,14 +29,14 @@ class Cards extends React.Component {
       <div className="cards">
         {cards.map((card, key) => {
           return (
-            <React.Fragment>
+            <React.Fragment key={key}>
             {card.name.toLowerCase().includes(filter.toLowerCase()) && (
               <Link to= { `/productos/${card.name.toLocaleLowerCase()}` }>
               <Card 
               key={key}
               name={card.name}
-              img={card.img}
-              description={card.description}
+              img={card.logo}
+              description={card.desc}
               />
               </Link>
             )}

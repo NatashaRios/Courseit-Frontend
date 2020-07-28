@@ -32,8 +32,34 @@ class Agregar extends React.Component {
     handleClick(e) {
       e.preventDefault();
       const { name, logo, email, desc } = this.state;
-     
-     
+      
+      if (name && email && logo && desc) {
+        const oldStartups = localStorage.getItem("startups")
+      
+        if(oldStartups) {
+          const parsedOldStartups = JSON.parse(oldStartups)
+          parsedOldStartups.push({
+            name,
+            email,
+            logo,
+            desc
+          })
+
+          const newStartups = JSON.stringify(parsedOldStartups)
+          localStorage.setItem("startups", newStartups)
+        } else {
+          const startups = []
+          startups.push({
+            name,
+            email, 
+            logo, 
+            desc
+          })
+          const startupsToString = JSON.stringify(startups);
+          localStorage.setItem("startups", startupsToString)
+        } 
+      }
+      
       if(name == "" || logo == "" || email == "" || desc == "") {
         this.setState({
           aviso1: "show1",
@@ -48,10 +74,12 @@ class Agregar extends React.Component {
     }
 
   render() {
+    const { name, email, logo, desc } = this.state;
     return(
       <div className="wrapper-agregar">
         <p className={this.state.aviso1}>Por favor completa todos los datos requeridos</p>
         <p className={this.state.aviso2}>Startup creada correactamente. En breve será aprobada</p>
+        
         <form className="formulario">
         <p className="title-agregar">Nombre</p>
         <input className="input-agregar" name="name" onChange={(e) => this.handleChange(e)} type="text" placeholder="Nombre"/>

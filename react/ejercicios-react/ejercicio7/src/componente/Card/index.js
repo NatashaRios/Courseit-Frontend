@@ -10,7 +10,6 @@ class Card extends React.Component {
         <div className="text">
           <span className="name-card">{this.props.name}</span>
           <p className="description">{this.props.description}</p>
-          
         </div>
       </div>
     )

@@ -30,7 +30,7 @@ class App extends React.Component{
       avatar: avatar_url,
       repos: getRepo.data
     })
-    console.log(this.state.repos);
+    
   }
   render() {
     const { github, bio, avatar } = this.state;

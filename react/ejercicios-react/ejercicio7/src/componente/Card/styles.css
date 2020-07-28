@@ -3,7 +3,8 @@ a {
   text-decoration: none;
 }
 .card {
-  width: 350px;
+  width: 370px;
+  height: auto;
   border-radius: 10px;
   border: 1px solid black;
   margin: 5px;
