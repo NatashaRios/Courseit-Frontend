@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Pelicula 1",
+    "type:": "movie"
+  },
+  {
+    "id": 2,
+    "name": "Serie 2",
+    "type": "serie"
+  },
+  {
+    "id": 3,
+    "name": "Serie 3",
+    "type": "serie"
+  }
+]
