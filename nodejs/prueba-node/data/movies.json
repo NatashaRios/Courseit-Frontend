@@ -2,12 +2,12 @@
   {
     "id": 1,
     "name": "Pelicula 1",
-    "type:": "movie"
+    "type": "movie"
   },
   {
     "id": 2,
-    "name": "Serie 2",
-    "type": "serie"
+    "name": "Pelicula 2",
+    "type": "movie"
   },
   {
     "id": 3,
