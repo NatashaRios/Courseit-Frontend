@@ -46,7 +46,13 @@ router.get("/movies/:id", (req, res) => {
 
 router.post("/contact", (req, res) => {
   const body = req.body;
-  console.log(body);
+  const {name, mail, contact} = body;
+
+  if(name && mail && contact){
+    return res.sendStatus(201);
+  }else {
+    return res.sendStatus(400);
+  }
   return res.sendStatus(201);
 });
 
