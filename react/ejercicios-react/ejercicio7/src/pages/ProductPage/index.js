@@ -1,6 +1,5 @@
 import React from 'react';
 import Footer from '../../componente/Footer';
-import startups from '../../data/startups.json';
 import './styles.css';
 class ProductPage extends React.Component {
   constructor(props) {

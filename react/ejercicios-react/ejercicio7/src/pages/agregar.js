@@ -31,6 +31,7 @@ class Agregar extends React.Component {
 
     handleClick(e) {
       e.preventDefault();
+      
       const { name, logo, email, desc } = this.state;
       
       if (name && email && logo && desc) {
@@ -142,7 +143,7 @@ export default Agregar;
     //   this.setState({
     //     estaOk: true,
     //     showMessage: true
-    //   });
+    //   });0
     // } else {
     //   this.setState({
     //     estaOk: false,
