@@ -1,0 +1,20 @@
+
+.wrapper-home{
+  background-color: #FFE600;
+  min-width: 100vw;
+  height: 100vh;
+
+  .content-home{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 5rem;
+    width: 40rem;
+    
+    .img-home{
+      width: 28rem;
+      height: 14rem;
+      padding-top: 5rem;
+    }
+  }
+
+}

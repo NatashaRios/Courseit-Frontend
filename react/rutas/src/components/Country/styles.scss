@@ -1,0 +1,23 @@
+a{
+  text-decoration: none;
+}
+
+.wrapper-country{
+    
+    .content-country{
+      display: flex;
+      height: 1.5rem;
+      
+      .flag-country{
+        height: 0.5rem;
+        width: 1rem;
+        margin-top: 1rem;
+      }
+  
+      .name-country{
+        font-size: 0.7em;
+        margin-left: 0.5rem;
+        color: black;
+      }
+  }
+    }

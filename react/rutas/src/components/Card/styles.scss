@@ -1,0 +1,22 @@
+.wrapper-card{
+  background-color: white;
+  height: 20rem;
+  width: 10rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 0.1rem;
+
+  .img-card{
+    width: 100%;
+    height: 7rem;
+    border-bottom: 1px solid grey;
+    padding-bottom: 1rem;
+  }
+  .title-card{
+    text-align: center;
+    height: 8rem;
+  }
+  .price-card{
+    text-align: center;
+  }
+}

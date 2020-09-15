@@ -1,0 +1,97 @@
+[
+  {
+    "site": "MLA",
+    "flag": "https://i.postimg.cc/B6M98123/argentina.png",
+    "name": "Argentina"
+  },
+  {
+    "site": "MLB",
+    "flag": "https://i.postimg.cc/9F45M003/brasil.png",
+    "name": "Brasil"
+  },
+  {
+    "site": "MCO",
+    "flag": "https://i.postimg.cc/52vhBr8n/colombia.png",
+    "name": "Colombia"
+  },
+  {
+    "site": "MCR",
+    "flag": "https://i.postimg.cc/MTZg8KNF/costa-Rica.png",
+    "name": "Costa Rica"
+  },
+  {
+    "site": "MLC",
+    "flag": "https://i.postimg.cc/BbkzD56r/chile.png",
+    "name": "Chile"
+  },
+  {
+    "site": "MRD",
+    "flag": "https://i.postimg.cc/4xz079T0/dominicana.png",
+    "name": "Dominicana"
+  },
+  {
+    "site": "MEC",
+    "flag": "https://i.postimg.cc/7P5wCmtQ/ecuador.png",
+    "name": "Ecuador"
+  },
+  {
+    "site": "MCU",
+    "flag": "https://i.postimg.cc/c1pTRLTG/cuba.png",
+    "name": "CUBA"
+  },
+  {
+    "site": "MLM",
+    "flag": "https://i.postimg.cc/c4YWh6SR/mexico.png",
+    "name": "México"
+  },
+  {
+    "site": "MPA",
+    "flag": "https://i.postimg.cc/wjQpKP33/panama.png",
+    "name": "Panamá"
+  },
+  {
+    "site": "MPE",
+    "flag": "https://i.postimg.cc/3RVMCQff/peru.png",
+    "name": "Perú"
+  },
+  {
+    "site": "MBO",
+    "flag": "https://i.postimg.cc/43jHDmYJ/bolivia.png",
+    "name": "Bolivia"
+  },
+  {
+    "site": "MLU",
+    "flag": "https://i.postimg.cc/3r0QrWWs/uruguay.png",
+    "name": "Uruguay"
+  },
+  {
+    "site": "MLV",
+    "flag": "https://i.postimg.cc/QxLGFsTH/venezuela.png",
+    "name": "Venezuela"
+  },
+  {
+    "site": "MSV",
+    "flag": "https://i.postimg.cc/hjFhC6Yv/el-Salvador.png",
+    "name": "El Salvador"
+  },
+  {
+    "site": "MHN",
+    "flag": "https://i.postimg.cc/SNQRtWg6/honduras.png",
+    "name": "Honduras"
+  },
+  {
+    "site": "MPY",
+    "flag": "https://i.postimg.cc/x8ffh23f/paraguay.png",
+    "name": "Paraguay"
+  },
+  {
+    "site": "MNI",
+    "flag": "https://i.postimg.cc/3RB7gq5P/nicaragua.png",
+    "name": "Nicaragua"
+  },
+  {
+    "site": "MGT",
+    "flag": "https://i.postimg.cc/brVh52vg/guatemala.png",
+    "name": "Guatemala"
+  }
+]

@@ -1,0 +1,35 @@
+.nav{
+  display: flex;
+  background-color: #FFE600;
+  height: 4rem;
+
+  .img-navbar{
+    width: 8rem;
+    height: 4rem;
+    margin-left: 10rem;
+  }
+  .search-navbar{
+    margin-top: 0.8rem;
+    margin-left: 3rem;
+
+    .input-navbar{
+      width: 15rem;
+      height: 1.5rem;
+      padding-left: 1rem;
+      border-color: white;
+    }
+
+    .button-navbar{
+      width: 3.5rem;
+      height: 2rem;
+      background-color: white;
+      border-color: white;
+      margin-left: 0.1rem;
+    }
+  }
+  .text-navbar{
+    color: grey;
+    margin-left: 8rem;
+    font-weight: 600;
+  }
+}

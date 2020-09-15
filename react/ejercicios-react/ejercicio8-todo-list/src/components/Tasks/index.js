@@ -1,38 +1,44 @@
 import React, {useState} from 'react';
 import Task from '../Task';
 
-function Tasks(){
-  const [inputValue, setInputValue] = useState('');
-  const [add, setAdd] = useState([]);
-
-  function handleChange(e){
-    setInputValue(e.target.value)
+function Tasks(props){
+  function handleCallback(name){
+    console.log('Padre', name)
+    props.handleCallback(name); //Lo paso de tasks a app
   }
 
-  function handleClick(){
-    if(inputValue != ''){
-      const newAdd = [...add, inputValue];
-      setInputValue('')
-      setAdd(newAdd)
-    }
-    
-    
-  }
-
+  const { tasks } = props;
   return(
     <div>
-      <input type='text' onChange={handleChange} value={inputValue}/>
-      <button onClick={handleClick}>Agregar</button>
       <ul>
-         {add.map((item, key) => {
+          {tasks.map((task, key) => {
           return(
-            <Task item={item} key={key}/>
+            <Task handleCallback={handleCallback} name={task.value} isCompleted={task.isCompleted} key={key}/>
           )
-        })} 
+        })}  
         
       </ul>
     </div>
   )
 }
 
-export default Tasks;
+export default Tasks; 
+
+/* class Tasks extends React.Component{
+  render(){
+    const { tasks } = this.props;
+    return(
+      <React.Fragment>
+        <ul>
+          {tasks.map((task, key) => {
+            return(
+              <Task item={task} key={key}/>
+            )
+          })}
+        </ul>
+      </React.Fragment>
+    )
+  }
+}
+
+export default Tasks; */

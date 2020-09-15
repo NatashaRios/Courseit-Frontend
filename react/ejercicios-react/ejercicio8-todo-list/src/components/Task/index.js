@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
+import './styles.css';
 
 function Task(props){
-   const {item} = props; 
+  function handleClick(){
+    const { name, handleCallback } = props;
+
+    if(handleCallback){
+      handleCallback(name);
+      
+    }
+  }
+   const { name, isCompleted } = props; 
   return(
     <React.Fragment>
-       <li>{item}</li> 
+       <li onClick={handleClick} style={isCompleted ? { backgroundColor: 'green' } : { backgroundColor: 'white' }}>{name}</li> 
     </React.Fragment>
   )
 }
