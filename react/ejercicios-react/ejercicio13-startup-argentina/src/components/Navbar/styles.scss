@@ -1,0 +1,19 @@
+.navbar-content{
+  display: flex;
+  background-color: black;
+
+  .navbar-title{
+    font-size: 1em;
+    color: white;
+    margin-left: 10rem;
+    font-weight: 500;
+  }
+  .navbar-link{
+    color: grey;
+    margin: 0.5rem 0 0 20rem;
+  }
+}
+
+a{
+  text-decoration: none;
+}

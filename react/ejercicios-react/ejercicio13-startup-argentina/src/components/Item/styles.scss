@@ -1,0 +1,23 @@
+.item-content{
+  display: flex;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: -1px 6px 21px 6px rgba(232,223,232,1);
+  width: 20rem;
+  padding: 0.5rem 0 0.5rem 0;
+  background-color: white;
+  margin: 0.5rem;
+
+  .item-img{
+    width: 5rem;
+    height: 5rem;
+    padding: 0.7rem;
+  }
+  .item-text{
+    margin-top: -0.5rem;
+    .item-title{
+      font-weight: 700;
+    }
+    .item-desc{}
+  }
+}
