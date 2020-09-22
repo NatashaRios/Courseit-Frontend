@@ -5,7 +5,7 @@ function DescForm(){
   
   return(
     <>
-      <p>Descripción</p>
+      <p className='descform-title'>Descripción</p>
       <textarea className='descform-text' ></textarea>
     </>
   )
