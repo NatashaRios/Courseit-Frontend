@@ -17,4 +17,15 @@ function Products(){
   )
 }
 
+/* function Products() {
+  const [first, second, third] = productData;
+  return (
+    <>
+      <BigBox data={first} />
+      <SmallBox data={second} />
+      <SmallBox data={third} />
+    </>
+  );
+} */
+
 export default Products;

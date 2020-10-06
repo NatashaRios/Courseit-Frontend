@@ -13,4 +13,13 @@ function Toggle({clickButton, clickProduct}){
   )
 }
 
+/* function Checkout() {
+  return (
+    <div>
+      <ProductList />
+      <Amount />
+    </div>
+  );
+} */
+
 export default Toggle;
