@@ -1,11 +1,17 @@
 import React from 'react';
 import Item from '../Item';
-function List(){
+import { connect } from 'react-redux';
+import { addListInfo } from '../../store';
+
+function List(props){
+ 
   return(
     <>
-      <Item />
+    
     </>
   )
 }
+
+
 
 export default List;
