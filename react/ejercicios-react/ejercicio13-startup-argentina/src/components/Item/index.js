@@ -6,10 +6,10 @@ function Item(props){
   const { startupInfo } = props;
   return(
     <div className='item-content'>
-      <img className='item-img' src={startupInfo.img}/>
+      <img className='item-img' src={startupInfo.logo}/>
       <div className='item-text'>
-        <p className='item-title'>{startupInfo.title}</p>
-        <p className='item-desc'>{startupInfo.desc}</p>
+        <p className='item-title'>{startupInfo.name}</p>
+        <p className='item-desc'>{startupInfo.description}</p>
       </div>
     </div>
   )

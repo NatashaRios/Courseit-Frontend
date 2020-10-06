@@ -3,10 +3,12 @@ import Navbar from '../../components/Navbar';
 import List from '../../components/List';
 import Footer from '../../components/Footer';
 import { InputProvider } from '../../contexts/InputContext';
+import {useLocalStorage} from '../../hooks/useLocalStorage';
 import './styles.scss';
 
 function Home() {
   const [valueInput, setValueInput] = useState('');
+  const [getter] = useLocalStorage();
 
   function handleInput(value){
     setValueInput(value)
@@ -21,7 +23,7 @@ function Home() {
   return (
     <InputProvider value={inputContextData}>
       <Navbar />
-      <List/>
+      <List getter={getter}/>
       <Footer valueInput={valueInput}/>
     </InputProvider>
   );

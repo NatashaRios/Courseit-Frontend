@@ -1,0 +1,10 @@
+.products{
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+
+  .products-small{
+    flex-direction: column;
+    width: 30%;
+  }
+}

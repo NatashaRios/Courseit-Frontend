@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles.scss';
 
-function ButtonForm(){
+function ButtonForm({label, onClick}){
   return(
     <>
-      <button className='buttonform-button'>Enviar</button>
+      <button className='buttonform-button' onClick={onClick}>{label}</button>
     </>
   )
 }

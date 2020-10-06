@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "product": "Alfajor Marley negro",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSD7jpoDr7uIVy_ynqot71FCQNMcoMcNMy0oYh6vYbXpYYrVaYjy-btQzWWtzp1noCbVNi7CyOB&usqp=CAc",
+    "price": 75
+  },
+  {
+    "id": 2,
+    "product": "Flynn Paff banana",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTwoFQEn3q4-lku2l2scFBwymz5n7xiwfosAg&usqp=CAU",
+    "price": 5
+  },
+  {
+    "id": 3,
+    "product": "Milka bis! oreo",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSn8Fw8VH0IoqrzA1Q7ZpbGXmQAMGtiBw3B2ME2yOAZvmTh_OcFhklI5KTaAawDQ1rJmqgtStkW&usqp=CAc",
+    "price": 130
+  }
+]
