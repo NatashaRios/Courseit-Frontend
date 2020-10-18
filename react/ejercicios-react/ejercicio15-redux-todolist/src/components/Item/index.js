@@ -3,7 +3,7 @@ import React from 'react';
 function Item({item}){
   return(
     <>
-      <p>{item}</p>
+      <li>{item}</li>
     </>
   )
 }

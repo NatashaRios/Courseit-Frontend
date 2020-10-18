@@ -7,8 +7,10 @@ import './App.css';
 function App() {
   return (
     <>
-      <Input />
-      <Button />
+      <div>
+        <Input />
+        <Button />
+      </div>
       <List />
     </>
   );

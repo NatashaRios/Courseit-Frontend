@@ -14,9 +14,11 @@ export const reducer = (state = initialState, action) => {
         input: action.inputValue
       }
       case 'ADD_BUTTONINFO':
+        const { button, input } = state;
         return{
           ...state,
-          button: action.buttonInfo
+          button: [...button, input],
+          input: ''
         }
     default:
       return state;
@@ -33,7 +35,6 @@ export const addInputValue = (value) => dispatch => {
 export const addButtonInfo = () => dispatch => {
   return dispatch({
     type: 'ADD_BUTTONINFO',
-    
   });
 };
 

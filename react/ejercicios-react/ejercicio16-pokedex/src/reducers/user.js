@@ -5,7 +5,6 @@ const InitialState = {
  export const user = (state = InitialState, action) => {
    switch (action.type) {
      case "updateUserData":
-       const { button, input } = state;
        return {
          ...state,
          isLogged: action.value

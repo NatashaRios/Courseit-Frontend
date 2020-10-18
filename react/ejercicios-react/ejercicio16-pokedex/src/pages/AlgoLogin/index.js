@@ -1,16 +1,17 @@
 import React, {useState} from 'react';
-import InputLogin from '../../components/InputLogin';
-import ButtonLogin from '../../components/ButtonLogin';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 import { useDispatch } from "react-redux";
 import { updateUserData } from "../../store";
 import { useHistory } from "react-router-dom";
+
 import './styles.scss';
 
 function AlgoLogin(){
   const [userData, setUserData] = useState({});
   const history = useHistory();
   const dispatch = useDispatch();
-
+ 
   function handleChange(name, value){
     setUserData({...userData, [name]: value});
   }
@@ -30,9 +31,9 @@ function AlgoLogin(){
 
   return(
     <div className='algo-login'>
-      <InputLogin name='user' label='Usuario' type='text' onChange={handleChange}/>
-      <InputLogin name='password' label='Password' type='password' onChange={handleChange}/>
-      <ButtonLogin label='Ingresar' onClick={handleClick}/>
+      <Input name='user' label='Usuario' type='text' onChange={handleChange}/>
+      <Input name='password' label='Password' type='password' onChange={handleChange}/>
+      <Button label='Ingresar' onClick={handleClick}/>
     </div>
   )
 }

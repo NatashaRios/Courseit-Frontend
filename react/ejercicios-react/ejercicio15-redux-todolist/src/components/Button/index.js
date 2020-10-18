@@ -1,10 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addButtonInfo} from '../../store';
+import {useDispatch} from 'react-redux';
 
-function Button(props){
+function Button(){
+  const dispatch = useDispatch();
+  
   function handleClick(){
-    const { dispatch } = props;
     dispatch(addButtonInfo());
   }
   return(
@@ -14,11 +16,5 @@ function Button(props){
   )
 }
 
-function mapStateToProps(state){
-  console.log(state)
-  return {
-    buttonInfo: state.button
-  }
-}
 
-export default connect(mapStateToProps)(Button);
+export default connect()(Button);

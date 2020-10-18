@@ -1,17 +1,20 @@
 import React from 'react';
 import Item from '../Item';
 import { connect } from 'react-redux';
-import { addListInfo } from '../../store';
+import {useSelector} from 'react-redux';
 
-function List(props){
- 
+function List(){
+  const button = useSelector((state) => state.button);
   return(
-    <>
-    
-    </>
+    <ul>
+      {button.map((item, key) => {
+        return(
+          <Item key={key} item={item}/>
+        )
+      })}
+    </ul>
   )
 }
 
 
-
-export default List;
+export default connect()(List);
