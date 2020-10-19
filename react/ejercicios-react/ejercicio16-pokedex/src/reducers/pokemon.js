@@ -1,5 +1,5 @@
 const InitialState = {
-  pokemon: []
+  pokemon: ''
  };
  
  export const pokemon = (state = InitialState, action) => {
@@ -7,7 +7,7 @@ const InitialState = {
      case "updatePokemon":
        return {
          ...state,
-         pokemon: [...state.pokemon]
+         pokemon: [...state.pokemon, action.pokemonName, action.pokemonImg]
        };
      default:
        return state;

@@ -15,9 +15,11 @@ export const updateUserData = (isLogged) => (dispatch) => {
   })
 }
 
-export const updatePokemon = () => (dispatch) => {
+export const updatePokemon = (name, img) => (dispatch) => {
   return dispatch({
-    type: 'updatePokemon'
+    type: 'updatePokemon',
+    pokemonName: name,
+    pokemonImg: img
   })
 }
 

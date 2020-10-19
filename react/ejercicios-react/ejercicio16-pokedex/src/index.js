@@ -15,7 +15,7 @@ ReactDOM.render(
     <Router>
       <Route exact path='/login' component={AlgoLogin}/>
       <Route exact path ='/' component={Home} />
-      <Route exact path='/pokemon/:id' component={Pokemon} />
+      <Route exact path='/pokemon' component={Pokemon} />
     </Router>
   </Provider>,
   document.getElementById('root')

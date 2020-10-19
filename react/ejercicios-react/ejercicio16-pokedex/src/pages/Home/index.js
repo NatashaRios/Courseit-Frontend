@@ -5,12 +5,14 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { updatePokemon } from "../../store";
+import { useHistory } from 'react-router-dom';
 import './styles.scss';
 
 function Home(){
   const [pokemon, setPokemon] = useState('')
   const isLogged = useSelector((state) => state.user.isLogged);
   const dispatch = useDispatch();
+  const history = useHistory();
 
   function handleChange(value){
     setPokemon(value)
@@ -26,6 +28,7 @@ function Home(){
     
     if(pokemon == name) {
       dispatch(updatePokemon(name, img))
+      history.push('/pokemon');
     }
     
   }
