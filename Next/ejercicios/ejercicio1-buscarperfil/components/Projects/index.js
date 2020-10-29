@@ -8,21 +8,23 @@ export default function Projects({ projects }){
   const home = projects.slice(0,3)
   
   return(
-    <>
-      {router.route == '/' ? (
+    <div className={styles.container}>
+      {router.route == '/' && (
         home.map((project, key) => {
           return(
             <Project project={project} key={key} />
           )
         })
-      ) : (
-
-      projects.map((project, key) => {
-        return(
-          <Project project={project} key={key} />
-        )
-      })
+      ) 
+      }
+      {router.route == '/handler/[handler]' && (
+        projects.map((project, key) => {
+          return(
+            <Project project={project} key={key} />
+          )
+        })
       )}
-    </>
+      
+    </div>
   )
 }

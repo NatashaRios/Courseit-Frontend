@@ -4,12 +4,11 @@ import Button from '../components/Button';
 import User from '../components/User';
 import Projects from '../components/Projects';
 import {useState} from 'react';
-import { useRouter } from 'next/router'
 import styles from '../styles/Home.module.scss'
 
 export default function Home({info}){
-  const router = useRouter()
-  console.log(router.route)
+  
+
   const [inputValue, setInputValue] = useState('');
   const [click, setClick] = useState({});
   function handleInput(value){
@@ -22,8 +21,9 @@ export default function Home({info}){
     const img = json.avatar_url;
     const name = json.name;
     const desc = json.bio;
+    const login = json.login
     
-    setClick({img, name, desc})
+    setClick({img, name, desc, login})
     setInputValue('');
   }
 
@@ -36,16 +36,18 @@ export default function Home({info}){
   })
   
   return(
-    <>
+    <div className={styles.container}>
       <Title title='Buscá tu perfil'/>
-      <Input placeholder='Ingresar nombre del usuario' type='text' handleInput={handleInput} value={inputValue}/>
-      <Button label='Buscar' handleSearch={handleSearch}/>
+      <div className={styles.search}>
+        <Input placeholder='Ingresar nombre del usuario' type='text' handleInput={handleInput} value={inputValue}/>
+        <Button label='Buscar' handleSearch={handleSearch}/>
+      </div>
       <User user={click}/>
       {click.name == nameUser && (
         <Projects projects={infoProjects[0]}/>
       )}
       
-    </>
+    </div>
   )
 }
 
