@@ -11,8 +11,15 @@ export default function Home({info}){
 
   const [inputValue, setInputValue] = useState('');
   const [click, setClick] = useState({});
-  function handleInput(value){
-    setInputValue(value)
+  
+  function handleInput(e){
+    setInputValue(e.target.value);
+  }
+
+  function handleKeyPress(e) {
+    if (e.key == "Enter") {
+      handleSearch();
+    }
   }
 
   async function handleSearch(){
@@ -39,7 +46,7 @@ export default function Home({info}){
     <div className={styles.container}>
       <Title title='Buscá tu perfil'/>
       <div className={styles.search}>
-        <Input placeholder='Ingresar nombre del usuario' type='text' handleInput={handleInput} value={inputValue}/>
+        <Input placeholder='Ingresar nombre del usuario' type='text' onChange={handleInput} onKeyPress={handleKeyPress} value={inputValue}/>
         <Button label='Buscar' handleSearch={handleSearch}/>
       </div>
       <User user={click}/>

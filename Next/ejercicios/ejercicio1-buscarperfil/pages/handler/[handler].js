@@ -25,10 +25,13 @@ export default function DynamicRoute({info, infoUser}){
 }
 
 
+export async function getStaticPaths() {
+  return { paths: [], fallback: true };
+}
 
-export async function getServerSideProps( { params }){
-  const {handler} = params;
-  console.log(handler)
+export async function getStaticProps( { params }){
+  const { handler } = params;
+
   const data = await fetch(`https://api.github.com/users/${handler}`);
   const json = await data.json();
   
@@ -38,8 +41,9 @@ export async function getServerSideProps( { params }){
     props: {
       info: json,
       infoUser: jsonUser
-    }
-  }
+    },
+    revalidate: 3600 * 24
+  };
 }
 
 
