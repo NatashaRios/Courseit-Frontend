@@ -2,6 +2,7 @@ import User from '../../components/User';
 import Projects from '../../components/Projects'
 import styles from '../../styles/Handler.module.scss';
 import { useRouter } from 'next/router'
+
 export default function DynamicRoute({info, infoUser}){
   const router = useRouter()
   
